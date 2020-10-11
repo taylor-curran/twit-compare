@@ -16,3 +16,7 @@ APP = create_app()
 # FLASK_APP=twit_compare:APP flask run
 
 # AND Double check that __init__.py is set correctly.
+
+# To Open Up a REPL
+
+# FLASK_APP=twitoff:APP flask shell
