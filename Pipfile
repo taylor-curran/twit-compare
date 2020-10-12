@@ -14,6 +14,8 @@ gunicorn = "*"
 scikit-learn = "*"
 python-dotenv = "*"
 spacy = "*"
+jupyterlab = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.8"
