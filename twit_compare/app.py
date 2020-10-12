@@ -1,7 +1,10 @@
 """Main app/routing file for Twit-Compare"""
 
 from flask import Flask, render_template # For Front-End
-from .models import DB, User, insert_example_users
+from .models import DB, User
+from .twitter import insert_example_users
+
+# . means THIS directory or current directory
 
 # function that creates the app
 # AKA an App Factory?
@@ -26,9 +29,15 @@ def create_app():
     @app.route('/update')
     def update():
         # Reset the DB
+        insert_example_users()
+        return render_template('base.html', title='Users updated!',
+                                users=User.query.all())
+
+
+    @app.route('/reset')
+    def reset():
         DB.drop_all()
         DB.create_all()
-        insert_example_users()
-        return render_template('base.html')
+        return render_template('base.html', title='Reset database!')
 
     return app

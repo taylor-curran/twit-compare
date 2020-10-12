@@ -20,3 +20,6 @@ APP = create_app()
 # To Open Up a REPL
 
 # FLASK_APP=twitoff:APP flask shell
+
+# If you change your .env file you need to exit and re-enter 
+# your virtual env.
