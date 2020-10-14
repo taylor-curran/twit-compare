@@ -16,6 +16,7 @@ python-dotenv = "*"
 spacy = "*"
 jupyterlab = "*"
 ipykernel = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"

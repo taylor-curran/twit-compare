@@ -23,3 +23,6 @@ APP = create_app()
 
 # If you change your .env file you need to exit and re-enter 
 # your virtual env.
+
+
+# FLASK_APP=twitoff:APP flask run
