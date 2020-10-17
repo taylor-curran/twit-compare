@@ -26,3 +26,5 @@ APP = create_app()
 
 
 # FLASK_APP=twitoff:APP flask run
+
+git push heroku HEAD:master
