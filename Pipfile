@@ -18,6 +18,7 @@ jupyterlab = "*"
 ipykernel = "*"
 numpy = "*"
 psycopg2-binary = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.8"
